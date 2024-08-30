@@ -28,7 +28,7 @@ function LoginButton({ onLogin }) {
 
   return (
     <FacebookLogin
-      appId = {process.env.FACEBOOK_APP_ID} // replace with your app ID
+      appId = {import.meta.env.FACEBOOK_APP_ID} // replace with your app ID
       autoLoad={false} // Set to true if you want to auto-load the login dialog
       fields="name,email,picture"
       callback={responseFacebook}
